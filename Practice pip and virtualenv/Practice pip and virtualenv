@@ -1,0 +1,20 @@
+pip install Django==1.11.9
+    Collects the package Django, version number 1.11.9, and installs the package within the virtual enviroment.
+pip list
+    Lists the packages installed within the virtual enviroment
+deactivate
+    Deactivates the virtual enviroment
+pip3 list
+    Lists the packages installed within the enviroment. Django and pyzt pip are missing.
+source py3Env/Scripts/activate
+    Reactivates the virtual enviroment 'py3Env'
+pip install Django==1.11.9
+    Terminal returns 'Requirement already satisfied', Django and pytz are still installed in the virtual enviroment
+pip freeze
+    Lists the unique packages associcated with the virtual enviroment
+cd ~/Desktop pip freeze > requirements.txt list
+    Creates a text file named 'requirements' within Desktop
+pip uninstall Django
+    Uninstalls Django from the virtual enviroment
+pip show Django
+    Nothing shown in terminal
