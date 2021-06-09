@@ -64,7 +64,7 @@ def a(list):
 #9 Reverse List - Create a funtion that takes a list and returns that list with values reversed. Do this without creating a second list.
 def a(list):
     list_len = len(list)
-    for i in range(list_len/2):
+    for i in range(int(list_len/2)):
         temp = list[list_len - 1 - i]
         list[list_len - 1 - i] = list[i]
         list[i] = temp
