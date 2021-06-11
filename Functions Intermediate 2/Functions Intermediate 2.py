@@ -30,8 +30,10 @@ students = [
         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
-def iterateDictionary():
-    pass
+def iterateDictionary(list):
+    for i in range(0,len(list)+1,1):
+        print(list[i])
+
 # iterateDictionary(students) should output:
 # first_name - Michael, last_name - Jordan
 # first_name - John, last_name - Rosales
@@ -39,9 +41,10 @@ def iterateDictionary():
 # first_name - KB, last_name - Tonel
 
 #3 Get Values From a List of Dictionaries
-def iterateDictionary2():
-    pass
-# iterateDictionary2('last_name', students) should output
+def iterateDictionary2(key,list):
+    for i in range(0,len(list)+1,1):
+        print(list[i][key])
+# iterateDictionary2('first_name', students) should output
 # Michael
 # John
 # Mark
@@ -59,7 +62,7 @@ dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
-
+def printInfo():
 # printInfo(dojo) should output:
 # 7 LOCATIONS
 # San Jose
