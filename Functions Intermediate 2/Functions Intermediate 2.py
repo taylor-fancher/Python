@@ -10,6 +10,19 @@ sports_directory = {
 }
 z = [ {'x': 10, 'y': 20} ]
 
+def a():
+    x[1] = [15,8,9] #changes 10 to 15
+    print(x)
+
+    students[0]['last_name'] = 'Bryant' #changes 'Jordan' to 'Bryant'
+    print(students[0])
+
+    sports_directory.update(soccer = ['Andres', 'Ronaldo', 'Rooney']) #changes 'Messi' to 'Andres'
+    print(sports_directory)
+
+    z[0].update(y = 30) #changes 20 to 30
+    print(z)
+
 #2 Iterate Through a List of Dictionaries
 students = [
         {'first_name':  'Michael', 'last_name' : 'Jordan'},
