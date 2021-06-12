@@ -32,7 +32,7 @@ students = [
     ]
 
 def iterateDictionary(list):
-    for i in range(0,len(list)+1,1):
+    for i in range(len(list)):
         print(list[i])
 
 # iterateDictionary(students) should output:
