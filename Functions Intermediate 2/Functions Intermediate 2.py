@@ -32,9 +32,16 @@ students = [
     ]
 
 def iterateDictionary(list):
-    for i in range(len(list)):
-        print(list[i])
+    for i in list:
+        seperator = ", "
+        some_list = []
+        for key, value in i.items():
+            some_string = f"{key} - {value}"
+            some_list.append(some_string)
+            #print(some_list)
+        print(seperator.join(some_list))
 
+iterateDictionary(students)
 # iterateDictionary(students) should output:
 # first_name - Michael, last_name - Jordan
 # first_name - John, last_name - Rosales
