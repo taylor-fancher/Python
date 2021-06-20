@@ -13,4 +13,11 @@ class user:
         other_user.account_balance += amount
 
 Paul = user('Paul')
+Paul. make_deposit(500)
 Paul.display_user_balance()
+Steve = user('Steve')
+Steve.make_deposit(500)
+Steve.display_user_balance()
+Paul.transfer_money(Steve, 250)
+Paul.display_user_balance()
+Steve.display_user_balance()
